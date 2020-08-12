@@ -2,7 +2,7 @@ import {useState} from "react";
 
 
 const useLocalStorage = (key, initialValue) => {
-
+    
     const [storedValue, setStoredValue] = useState(() => {
         //Uses key to pull item from local storage
         const item = window.localStorage.getItem(key);
@@ -19,7 +19,7 @@ const useLocalStorage = (key, initialValue) => {
         //Stores value in browser
         window.localStorage.setItem(key, JSON.stringify(value));
     }
-
+    console.log("useLocalStoragea  storedValue is ", storedValue);
     return [storedValue, setValue];
 }
 

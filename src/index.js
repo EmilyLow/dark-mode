@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import "./styles.scss";
 
 const App = () => {
+  // console.log("index log");
   const [coinData, setCoinData] = useState([]);
 
   useEffect(() => {
